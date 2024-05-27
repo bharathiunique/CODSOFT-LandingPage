@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Company</title>
+    <link rel="stylesheet" href="Landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 20px; border-radius: 10px; z-index: 9999; text-align: center;">
+        <h3>Summer Offer!</h3>
+        <img src="https://media.designcafe.com/wp-content/uploads/2020/05/13153639/kids-playroom-design.jpg" alt="Summer Offer Image" style="max-width: 100%; height: 300px; margin-bottom: 20px;">
+        <p>Get 30% off on Kids Play Area</p>
+        <button onclick="bookNow()">Book Now</button>
+        <button onclick="closePopup()" style="margin-left: 10px;">Close</button>
+    </div>
+
+    <div class="side-widgets">
+        <div class="side-widget">
+            <a href="sms:+123456789"><i class="fas fa-comment-alt"></i></a>
+        </div>
+        <div class="side-widget">
+            <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="social-nav">
+        <ul>
+            <li><a href="mailto:info@example.com"><i class="far fa-envelope"></i>dreamspace@gmail.com</a></li>
+            <li><a href="tel:+123456789"><i class="fas fa-phone-alt"></i>+91 9000890008</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li> 
+        </ul>
+        <div class="get-started">
+            <button>GET STARTED</button>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <nav>
+            <span class="company-name"><span>DREAM</span> <span>SPACE</span></span> 
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Kitchen</a><br><br>
+                        <a href="#">BedRoom</a><br><br>
+                        <a href="#">Dining Room</a><br><br>
+                        <a href="#">Living Room</a><br><br>
+                        <a href="#">Bath Room</a><br><br>
+                        <a href="#">Balcony</a><br><br>
+                        <a href="#">Study Room</a><br><br>
+                        <a href="#">Play Area</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Location</a>
+                    <div class="dropdown-content">
+                        <a href="#">TamilNadu</a><br><br>
+                        <a href="#">Karnataka</a><br><br>
+                        <a href="#">Kerala</a><br><br>
+                        <a href="#">Andhra Pradesh</a><br><br>
+                        <a href="#">Goa</a><br><br>
+                        <a href="#">Pondycherry</a><br><br>
+                        <a href="#">Maharastra</a><br><br>
+                        <a href="#">Arunachal Pradesh</a><br><br>
+                        <a href="#">Telangana</a>
+                    </div>
+                </li>
+                
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <i class="fas fa-user"></i>
+            </div>
+            
+        </nav>
+        <div class="image-carousel">
+            <img class="carousel-image" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/297558390/original/1e2fc90bb47deebea29ad7845711098a429855e2/provide-interior-design-services.jpg" alt="Image 1">
+            <img class="carousel-image" src="https://www.floridaleathergallery.com/blog/wp-content/uploads/sites/116/2020/12/moderninteriordesign.jpg" alt="Image 2">
+            <img class="carousel-image" src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg" alt="Image 3">
+        </div>
+    </div>
+
+     <div class="about-us-container">
+        <div class="about-us-content">
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; color: chocolate;"><span style="color: black;">About</span> Us</h2>
+            <p style="color:dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">At Dream Space Interior Designs, we believe in transforming spaces into personalized sanctuaries that reflect your unique style and personality. With a passion for innovation and a commitment to excellence, we strive to exceed your expectations and bring your interior design dreams to life.Our mission is to create exceptional living environments that inspire and delight. We aim to deliver innovative design solutions tailored to your specific needs and preferences, enhancing the beauty and functionality of your home or workspace.</p>
+            <p style="color:dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">With a focus on creativity, functionality, and attention to detail, we approach each project with enthusiasm and dedication. From conceptualization to execution, our experienced team of designers works closely with you every step of the way, ensuring a seamless and enjoyable design experience.Explore our portfolio to discover a diverse range of projects, from residential homes to commercial spaces. Each project showcases our commitment to excellence and our ability to transform ordinary spaces into extraordinary works of art.</p>
+        </div>
+        <div class="about-us-image">
+            <img src="https://www.rennovate.co.in/wp-content/uploads/2022/09/blog10-1.jpg" alt="About Us Image">
+        </div>
+    </div>
+    <div class="image-content-container">
+        <div class="image">
+            <img src="https://cityfurnish.com/blog/wp-content/uploads/2023/09/modren-room-home-interior-design-min.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+            <p style="color:dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">We are passionate about exploring new ideas and pushing the boundaries of design to create spaces that are truly one-of-a-kind.Our team consists of skilled professionals with years of experience in the field of interior design, ensuring high-quality results and unparalleled craftsmanship.Your satisfaction is our top priority. We strive to exceed your expectations and deliver results that exceed your wildest dreams.Ready to bring your interior design vision to life? Contact us today to schedule a consultation and take the first step towards creating the home or workspace of your dreams.</p>
+            <button>TALK TO OUR DESIGNERS</button>
+        </div>
+    </div>
+    <h2 align="center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px;">
+        Here's What You Can Do On
+        <span style="color: black;">DREAM</span>
+        <span style="color: chocolate;">SPACE</span>
+    </h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_photos%402x.png">
+            <p>Discover Design Ideas</p>
+            <button>Learn More</button>
+        </div>
+        <div class="flex-item">
+            <img src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_professionals%402x.png">
+            <p>Browse Pros</p>
+            <button>Learn More</button>
+        </div>
+        <div class="flex-item">
+            <img src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_pro_match%402x.png">
+            <p>Suggest Pros for me</p>
+            <button>Learn More</button> 
+        </div>
+    </div>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+        Best Interior Designer's in India
+    </h2>
+    <div style="text-align: center;">
+        <span style="color: black; font-size: 36px;">DREAM</span>
+        <span style="color: chocolate; font-size: 36px;">SPACE</span>
+    </div>
+    <p style=" color:dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px; text-align: center;">
+        Applying the immense experience of more than 20 years in interior designing and funishing, Dream Space Home interior now offers its services in India. Setting up new standards of luxury and convenience, this company helps to create 100% customized interior in villas and apartment. Whether you are looking for a bespoke modular kitchen or complete furnishing, our expert interior designers in India are sure to exceed your every expectation. System and procedures at this professtional company ensure exceeding expectations of the client. In addition to this, the ability to understand the requirements and expertise to corrdinate with various stages of work helps in timely completion o fall projects.
+        As a premium home interior design company in India. Dream Space hosts a team talent designers, consultant and project implementation specialists. Type of projects that we undertake include house interior, apartment interior and luxury villas. We offer complete residentail interior works including modular kitchen interior design. Contact may include kid's room interior, living room, dining room, bedroom interior decor and all the othr furniture. Thus, with innovative design skills and perfect implementation, we try to ensure complete satisfaction to every client. With ample resource and experience of abput 10000 projects, we promise to make the whole process of interior work truly exceptional, hassle-free and efficient.
+    </p>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+        Buy <span style="color: chocolate; font-size: 36px;">40%</span> Direct Discount!
+    </h2>
+    <div class="discount-flex-container">
+        <div class="discount-flex-item">
+            <img src="https://www.milindpai.com/wp-content/uploads/2023/03/maxresdefault.jpg" alt="Image 1">
+            <p>Actual Price: ₹4 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹1.6 Lac*</span></p> 
+        </div>
+        <div class="discount-flex-item">
+            <img src="https://www.mydomaine.com/thmb/ZyTQo1IVMTofSFuVNcc6EbFOe9A=/5894x0/filters:no_upscale():strip_icc()/interior-design-ideas-10-dazey-den-1-019aeca987c74e13bf298d291d368e1e.jpeg" alt="Image 2">
+            <p>Actual Price: ₹6.5 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹2.6 Lac*</span></p> 
+        </div>
+        <div class="discount-flex-item">
+            <img src="https://interiordesign.net/wp-content/uploads/2024/05/InteriorDesign_April2024_EDG-Interior-Architecture-2.jpg" alt="Image 3">
+            <p>Actual Price: ₹2.5 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹1 Lac*</span></p>  
+        </div>
+        <div class="discount-flex-item">
+            <img src="https://pokilabs.ca/wp-content/uploads/2024/04/modern-luxury-interior-design-tips-for-home-renovation-megafurniture_d199fbaa-61e4-4abe-9d1d-37b272b30fc1.jpg" alt="Image 3">
+            <p>Actual Price: ₹8 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹3.2 Lac*</span></p>  
+        </div>
+        <div class="discount-flex-item">
+            <img src="https://www.nitidodesign.com/images/02_Featured%20Projects/01_Bombay%20Realty%20ICC%20Towers%20Residence%20-%20Residential%20Interiors%20-%201500%20sq%20ft/watermarked/01.JPG" alt="Image 3">
+            <p>Actual Price: ₹4.8 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹1.92 Lac*</span></p>  
+        </div>
+        <div class="discount-flex-item">
+            <img src="https://sumesshmenonassociates.com/wp-content/uploads/2021/12/001.jpg" alt="Image 3">
+            <p>Actual Price: ₹9 Lac*</p>
+            <p>Price: <span style="color: chocolate; font-size: 23px;">₹3.6 Lac*</span></p>  
+        </div>
+    </div>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+        What We Do At
+    </h2>
+    <div style="text-align: center;">
+        <span style="color: black; font-size: 36px;">DREAM</span>
+        <span style="color: chocolate; font-size: 36px;">SPACE</span>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item large">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Living room.png" alt="Image 1">
+        </div>
+        <div class="gallery-item medium">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Bed room.png" alt="Image 2">
+        </div>
+        <div class="gallery-item large">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Work Space.png" alt="Image 3">
+        </div>
+        <div class="gallery-item small">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Kitchen.png" alt="Image 4">
+        </div>
+        <div class="gallery-item small">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Dining room.png" alt="Image 5">
+        </div>
+        <div class="gallery-item small">
+            <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Bathroom.png" alt="Image 6">
+        </div>
+    </div>
+    <div class="large-modular-furniture-section">
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px;text-align: left;">Large Modular <span style="color: chocolate; font-size: 32px;">Furniture</span> Factory</h2>
+        <div class="container">
+            <div class="content">
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px; color:dimgrey;">At Dream Space we belive in the design and manufacture of high-auality furniture pieces, which are truly original. WE have a 1,25,000 sq ft Own Factory Space in 5 acres of land which is one of the largest modular furniture factories in India equipped with state-of-the-art German machinery to meet today's furnishing trends. Our factory is well provisioned for creating bespoke furniture solution. We design, bulid, and create interior that bring joy to out clients for the years to come and for that, we have excellent team who take different quality checks on out products of its scale or complexity. The thread that combine our furniture pieces is bringing contemporary design solution with strong commitment to quality. Our extensive knowledge, high professionalism and use of the most modern technologies collaborated with leading designers in home interior design is the key strength whoch allows us to craft the best result and quality products that inspire people.</p>
+                <button class="read-more-button">Read More</button>
+            </div>
+            <div class="images">
+                <img src="https://image.architonic.com/img_man2-1/310/0100/nurus-factory-b.jpg" alt="Image 1" style="width: 400px;">
+                <img src="https://en.idei.club/uploads/posts/2023-06/1686035014_en-idei-club-p-modern-factory-building-dizain-krasivo-5.jpg" alt="Image 2" style="width: 300px; height: 270px;">
+            </div>
+        </div>
+    </div>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+        Latest <span style="color: chocolate; font-size: 32px;">Blogs</span>
+    </h2>
+  <div class="card-container">
+    <div class="card">
+      <iframe class="video" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+      <div class="description">
+        <h3>Luxury Work Space</h3>
+        <p>A luxury workspace combines opulent design elements with state-of-the-art amenities, offering professionals an environment of unparalleled comfort and productivity.</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe class="video" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+      <div class="description">
+        <h3>Modren Kitchen</h3>
+        <p>A modern kitchen embodies sleek minimalism and innovative functionality, integrating clean lines, high-quality materials, and smart appliances for a space that's both stylish and efficient. </p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe class="video" src="https://www.youtube.com/embed/video3" frameborder="0" allowfullscreen></iframe>
+      <div class="description">
+        <h3>Attractive Dining Area</h3>
+        <p>An attractive dining area beckons with its inviting ambiance, blending elegant decor, ambient lighting, and comfortable seating to create a space that entices both appetite and conversation. </p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+      <div class="description">
+        <h3>Cozy BedRoom</h3>
+        <p>A cozy bedroom envelops you in comfort and tranquility, with soft textures, warm lighting, and plush furnishings creating a serene sanctuary for rest and relaxation. </p>
+      </div>
+    </div>
+    <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Outdoor Oasis</h3>
+          <p>Explore ways to extend your living space outdoors, from designing a cozy patio or deck to creating a lush garden retreat, complete with tips for selecting durable furniture and landscaping ideas.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Entryway Elegance</h3>
+          <p>Share tips for designing an inviting entryway that sets the tone for the rest of the home, including ideas for storage solutions, statement lighting, and welcoming decor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Bathroom Beautification</h3>
+          <p>Explore ways to upgrade your bathroom, from selecting elegant fixtures and finishes to maximizing storage in small spaces, transforming it into a spa-like oasis.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Living Room Makeover</h3>
+          <p>Explore tips and ideas for revamping your living room, from selecting the perfect color palette to arranging furniture for optimal flow and functionality.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Kids' Room Design</h3>
+          <p> Offer design tips and playful decor ideas for children's bedrooms and playrooms, focusing on safety, organization, and age-appropriate design elements.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Cultural Influences in Design</h3>
+          <p>Take readers on a journey around the world to discover how different cultures inspire and influence interior design styles, from Moroccan motifs to Scandinavian minimalism.</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe class="video" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Vintage Vibes</h3>
+          <p>Explore the resurgence of vintage and retro aesthetics in interior design, offering tips for blending old and new elements to create a timeless and eclectic look.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+    <div class="trusted-employees-container">
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: right;">
+            Our <span style="color: chocolate; font-size: 32px;">5000+</span> Trusted Employees
+        </h2>
+        <div class="trusted-employees-content">
+            <div class="images">
+                <img src="https://img.freepik.com/premium-photo/group-engineer-people-indian-worker-hispanic-latin-confident-standing-smile-large-factory-warehouse_43300-3869.jpg" alt="Employee Image 1">
+                <img src="https://akm-img-a-in.tosshub.com/sites/interactive/immersive/india-coolest-workplaces/assest/img/microsodt_data.jpg" alt="Employee Image 2">
+            </div>
+            <div class="content">
+                <p style="color: dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">
+                    At Dream Space, our success is built on the foundation of our dedicated team of over 5000 trusted employees, each bringing their unique talents and expertise to create exceptional interior design solutions. Our team comprises a diverse range of professionals, including interior designers, architects, project managers, craftsmen, and support staff, all working collaboratively to exceed client expectations.
+                    Our designers are passionate about transforming spaces into inspiring environments that reflect our clients' vision and lifestyle.
+                </p>
+                <p style="color: dimgrey; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">
+                    With years of experience and a keen eye for detail, they craft innovative design concepts tailored to each project's requirements, ensuring both aesthetic appeal and functional efficiency.ogether, we strive to set new standards of innovation and craftsmanship in the field of interior design, delivering timeless designs that inspire and delight.
+                </p>
+                <button class="know-more-button">Know More</button>
+            </div>
+        </div>
+    </div>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+        <span style="color: chocolate; font-size: 32px;">10000+</span> Happy Customers
+    </h2>
+
+<div class="customer-carousel">
+  <div class="customer">
+    <img src="https://i.pinimg.com/736x/72/59/b8/7259b8a62a6e596a170f0aa257e03b20.jpg" alt="Customer 1">
+  </div>
+  <div class="customer">
+    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV8zNl9yZWFsaXN0aWNfcGhvdG9ncmFwaF9vZl9hbl9pbmRpYW5faGFwcHlfZmFtaV83ZGZjYjgyYy01YzBiLTRkNzAtYjcwZS1lMzY3NmU4ZTVkOWFfMS5qcGc.jpg" alt="Customer 2">
+  </div>
+  <div class="customer">
+    <img src="https://image1.masterfile.com/getImage/NjMwLTA2NzIyOTk1ZW4uMDAwMDAwMDA=ABAF5r/630-06722995en_Masterfile.jpg" alt="Customer 3">
+  </div>
+  <div class="customer">
+    <img src="https://assets.telegraphindia.com/telegraph/2022/Apr/1650389169_famuli.jpg" alt="Customer 4">
+  </div>
+  <div class="customer">
+    <img src="https://thumbs.dreamstime.com/b/happy-indian-family-outdoor-park-candid-portrait-parents-children-having-fun-garden-park-36754546.jpg" alt="Customer 5">
+  </div>
+  <div class="customer">
+    <img src="https://img.freepik.com/premium-photo/indian-family-father-mother-son-daughter-holding-house-roof-made-cardboard_466689-7304.jpg" alt="Customer 6">
+  </div>
+  <div class="customer">
+    <img src="https://jainsocietyofottawa.org/wp-content/uploads/2023/07/istockphoto-1196706522-612x612-1.jpg" alt="Customer 7">
+  </div>
+  <div class="customer">
+    <img src="https://previews.123rf.com/images/espies/espies2010/espies201000639/156966853-indian-family-sitting-on-sofa-and-using-smartphone-laptop-or-tablet-watching-movie-or-surfing.jpg" alt="Customer 8">
+  </div>
+  <div class="customer">
+    <img src="https://media.istockphoto.com/id/1361217505/photo/portrait-of-happy-family-having-fun-at-park.jpg?s=612x612&w=0&k=20&c=bNe1vhEGUdVPV4ZIe6Yhm80IaVhQLurTgJSMLekk9_w=" alt="Customer 9">
+  </div>
+  <div class="customer">
+    <img src="https://images.pexels.com/photos/4593618/pexels-photo-4593618.jpeg?cs=srgb&dl=pexels-nilavan-4593618.jpg&fm=jpg" alt="Customer 10">
+  </div>
+  <div class="customer">
+    <img src="https://s3.envato.com/files/493489077/DSC_7711.jpeg" alt="Customer 11">
+  </div>
+  <div class="customer">
+    <img src="https://as2.ftcdn.net/v2/jpg/04/99/75/31/1000_F_499753119_rrUymiFU12O6TjDyZPclz59OVlgG2eI1.jpg" alt="Customer 12">
+  </div>
+</div>
+<br><br>
+
+<div class="book-container">
+    <div class="image-book-container">
+        <img src="https://www.iiad.edu.in/wp-content/uploads/2023/11/image3-6-768x1365-1.webp" alt="Design Image">
+    </div>
+    <div class="booking-form">
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; margin-top: 40px; text-align: center;">
+            <span style="color: chocolate; font-size: 32px;">Designs for Every Budget</span>
+        </h2>
+        <h2 align="center">Get Your Dream Home Today!</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <div class="book input">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="book input">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="book input">
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <button type="submit" div class="book-button">Book Now</button>
+            <p style="font-size: 17px;">By submitting this form, you agree to the</p>
+            <p style="font-size: 17px;"><span style="color: chocolate; font-size: 17px;">privacy</span> & <span style="color: chocolate; font-size: 17px;">terms and conditions.</span></p>
+        </form>
+    </div>
+</div>
+<br><br>
+<footer class="footer">
+    <div>
+      <img src="C:\Users\sarav\OneDrive\Pictures\Screenshots\Internship Landing Page\Logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="offering">
+      <h4>Offering</h4>
+      <p>Interiors</p>
+      <p>Commercial Interiors</p>
+    </div>
+    <div class="get-inspired">
+      <h4>Get Inspired</h4>
+      <p>Design Ideas</p>
+      <p>Magazines</p>
+    </div>
+    <div class="download-app">
+      <h4>Download Our App</h4>
+      <div class="app-button">
+        <img src="https://i0.wp.com/gwces.com/wp-content/uploads/2022/08/google-play-download-android-app-logo-png-transparent.png?ssl=1" alt="Google Play Button" width="150" height="45px">
+      </div>
+      <div class="app-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/640px-Download_on_the_App_Store_Badge.svg.png" alt="App Store Button" width="150">
+      </div>
+    </div>
+  </footer>
+  <div class="contact-details">
+    <div class="contact-column">
+        <div class="state">
+            <h4>TamilNadu</h4>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Chennai</div>
+                         <i class="fas fa-phone-alt"></i>+91 9000890008</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Salem</div>
+                         <i class="fas fa-phone-alt"></i>+91 8600586008</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Madurai</div>
+                         <i class="fas fa-phone-alt"></i>+91 9045398435</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Dharmapuri</div>
+                         <i class="fas fa-phone-alt"></i>+91 9007890078</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Krishnagiri</div>
+                         <i class="fas fa-phone-alt"></i>+91 9678996789</a></li>
+        </div>
+    </div>
+    <div class="contact-column">
+        <div class="state">
+            <h4>Karnataka</h4>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Bengaluru</div>
+            <i class="fas fa-phone-alt"></i>+91 8015680097</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Mysuru</div>
+            <i class="fas fa-phone-alt"></i>+91 8003480034</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Udupi</div>
+            <i class="fas fa-phone-alt"></i>+91 8760090078</a></li>
+        </div>
+    </div>
+    <div class="contact-column">
+        <div class="state">
+            <h4>Kerala</h4>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Thiruvanandhapuram</div>
+            <i class="fas fa-phone-alt"></i>+91 8600587657</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Alappuzha</div>
+            <i class="fas fa-phone-alt"></i>+91 9765697655</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Ernakulam</div>
+            <i class="fas fa-phone-alt"></i>+91 8760087600</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Wayanadu</div>
+            <i class="fas fa-phone-alt"></i>+91 8060080600</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Malappuram</div>
+            <i class="fas fa-phone-alt"></i>+91 8700987009</a></li>
+        </div>
+    </div>
+    <div class="contact-column">
+        <div class="state">
+            <h4>Maharastra</h4>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Mumbai</div>
+            <i class="fas fa-phone-alt"></i>+91 9056790567</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Pune</div>
+            <i class="fas fa-phone-alt"></i>+91 8700387005</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Nagpur</div>
+            <i class="fas fa-phone-alt"></i>+91 9001290045</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Kohlapur</div>
+            <i class="fas fa-phone-alt"></i>+91 8004580067</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Amaravati</div>
+            <i class="fas fa-phone-alt"></i>+91 7008970023</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Ahmednagar</div>
+            <i class="fas fa-phone-alt"></i>+91 9006790023</a></li>
+        </div>
+    </div>
+    <div class="contact-column">
+        <div class="state">
+            <h4>Telagana</h4>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Adilabad</div>
+            <i class="fas fa-phone-alt"></i>+91 8004580067</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Hyderabad</div>
+            <i class="fas fa-phone-alt"></i>+91 7008970056</a></li>
+            <div class="district"><i class="fas fa-map-marker-alt"></i>Hanumakonda</div>
+            <i class="fas fa-phone-alt"></i>+91 8564385643</a></li>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p align="center">&copy; 2024 DreamSpace.com. All Rights Reserved.</p>
+</div>
+<script src="Landing.js"></script>
+</body>
+</html>
